@@ -1,0 +1,222 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>FAQs</title>
+<style type="text/css">
+
+body {
+	width: 1000px;
+	margin: 0px;
+	font-family:text;
+	color: #858585;
+}
+@font-face {
+	font-family: text;
+	src: url("assets/fonts/roboto/Roboto-Light.ttf");
+}
+@font-face {
+	font-family: smallheading;
+	src: url("assets/fonts/roboto/Roboto-BoldCondensedItalic.ttf");
+}
+#wrapper{
+	width: 1000px;
+	
+}
+a{
+	text-decoration:none;
+}
+a:link {
+    text-decoration: none;
+	color: #dedede;
+}
+
+a:visited {
+    text-decoration: none;
+	color: #dedede;
+}
+#banner {
+	width: 1000px;
+	height: 200px;
+}
+
+#nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #3AAFA9;
+}
+
+#nav li {
+    float: left;
+	width: 250px;
+}
+
+#nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    border-bottom: 5px solid #2B7A78;
+    transition: background 0.8s ease 0s, border 0.3s ease 0s;
+}
+#nav li a:hover {
+    background-color: white;
+	color: #226160;
+	border-bottom: 5px solid #F2B50F;
+}
+.faq-header{
+  font-size: 42px;
+  border-bottom: 1px dotted #ccc;
+  padding:24px;
+}
+
+.faq-content {
+  margin: 0 auto;
+}
+
+.faq-question {
+  padding: 20px 0;
+  border-bottom: 1px dotted #ccc;
+}
+
+.panel-title {
+  font-size: 24px;
+  width: 100%;
+  position: relative;
+  margin: 0;
+  padding: 10px 10px 0 48px;
+  display: block;
+  cursor: pointer;
+}
+
+.panel-content {
+  font-size: 20px;
+  padding: 0px 14px;
+  margin: 0 40px;
+  height: 0;
+  overflow: hidden;
+  z-index: -1;
+  position: relative;
+  opacity: 0;
+  -webkit-transition: .4s ease;
+  -moz-transition: .4s ease;
+  -o-transition: .4s ease;
+  transition: .4s ease;
+}
+
+.panel:checked ~ .panel-content{
+  height: auto;
+  opacity: 1;
+  padding: 14px;
+}
+
+.plus {
+  position: absolute;
+  margin-left: 20px;
+  margin-top: 4px;
+  z-index: 5;
+  font-size: 42px;
+  line-height: 100%;
+  -webkit-user-select: none;    
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  -webkit-transition: .2s ease;
+  -moz-transition: .2s ease;
+  -o-transition: .2s ease;
+  transition: .2s ease;
+}
+
+.panel:checked ~ .plus {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.panel {
+  display: none;
+}
+#footer {
+	text-align:center;
+  	background-color: #2B7A78;
+  	clear: left;
+	color: #dedede;
+	font-size:14px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div id="wrapper">
+<div id="banner"><img src="assets/images/newbanner.jpg" width="1000" height="200" alt="number cruncher calculator banner" /></div>
+<div id="nav">
+  <ul>
+  <li><a href="index.html"><b>Home</b></a></li>
+  <li><a href="products.html"><b>Products</b></a></li>
+  <li><a href="faqs.html"><b>FAQs</b></a></li>
+  <li><a href="contact.html"><b>Contact</b></a></li>
+</ul></div>
+
+<div class="faq-header">
+<img src="assets/images/question.png" width="200" height="150" alt="question and answer" />
+Frequently Asked Questions
+</div>
+<div class="faq-content">
+  <div class="faq-question">
+    <input id="q1" type="checkbox" class="panel">
+    <div class="plus">+</div>
+    <label for="q1" class="panel-title">What is the store location?</label>
+    <div class="panel-content">Store address is 10372 W McFadden Ave, Westminster, CA 92683. Also you can buy online without going to the store.</div>
+  </div>
+  
+  <div class="faq-question">
+    <input id="q2" type="checkbox" class="panel">
+    <div class="plus">+</div>
+    <label for="q2" class="panel-title">How can I pay?</label>
+    <div class="panel-content"> We accept cash, credit/debit card, Paypal, Venmo, and Bitcoin.</div>
+  </div>
+  
+  <div class="faq-question">
+    <input id="q3" type="checkbox" class="panel">
+    <div class="plus">+</div>
+    <label for="q3" class="panel-title">Does my product have a warranty?</label>
+    <div class="panel-content">Every product has a warranty at least one year or longer.</div>
+  </div>
+  <div class="faq-question">
+    <input id="q4" type="checkbox" class="panel">
+    <div class="plus">+</div>
+    <label for="q4" class="panel-title">Where can I have my product fixed or replacement?</label>
+    <div class="panel-content">Here at Number Cruncher Store, the Repair department is located at the first right corner next to the Customer Service. </div>
+  </div>
+  <div class="faq-question">
+    <input id="q5" type="checkbox" class="panel">
+    <div class="plus">+</div>
+    <label for="q5" class="panel-title">What is your return policy?</label>
+    <div class="panel-content">We offer you 30 days to return policy. Item must be returned with invoice in order to get full refund.</div>
+  </div>
+  <div class="faq-question">
+    <input id="q6" type="checkbox" class="panel">
+    <div class="plus">+</div>
+    <label for="q6" class="panel-title">How do I know I am qualified for student/teacher discount?</label>
+    <div class="panel-content">As long as you have your school valid IDs, show it to the cashier when you check out at the store. If you purchase online, we have the section for discount information in which you can input information.</div>
+  </div>
+  <div class="faq-question">
+    <input id="q7" type="checkbox" class="panel">
+    <div class="plus">+</div>
+    <label for="q7" class="panel-title">When is my order shipped?</label>
+    <div class="panel-content">We ship within 24 hours after order being placed.</div>
+  </div>
+</div>
+<div id="footer">
+  <p><a href="index.html">Home</a> | <a href="products.html">Products</a> | <a href="faqs.html">FAQs</a> | <a href="contact.html">Contact</a><br />
+    &copy; Copyright 2018 - Number Cruncher - All Rights Reserved
+    <br>10372 W McFadden Ave, Westminster, CA 92683 </p>
+</div>
+</div>
+</body>
+</html>
